@@ -10,19 +10,21 @@ Execute o comando `ng serve` para inicializar o servidor. Navegue no endereço `
 
   + Bootstrap 4
 
-    ** `npm i bootstrap --save` 
+    - `npm i bootstrap --save` 
 
   + NGX Bootstrap
 
-    ** `npm i ngx-bootstrap --save` 
+    - `npm i ngx-bootstrap --save` 
 
   + PrimeNG
 
-    ** `npm i primeng --save` 
+    - `npm i primeng --save` 
 
   + PrimeNG Icons
 
-    ** `npm i primeicons --save` 
+    - `npm i primeicons --save` 
+
+  + Ao instalar os pacotes acima executar o seguinte comando `npm install` na pasta raiz do projeto.
 
 ## Gerar componentes
 
