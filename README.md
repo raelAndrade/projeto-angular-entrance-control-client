@@ -6,6 +6,24 @@ Este projeto foi criado com [Angular CLI](https://github.com/angular/angular-cli
 
 Execute o comando `ng serve` para inicializar o servidor. Navegue no endereço `http://localhost:4200/` .
 
+## Instalar pacotes
+
+  + Bootstrap 4
+
+    ** `npm i bootstrap --save` 
+
+  + NGX Bootstrap
+
+    ** `npm i ngx-bootstrap --save` 
+
+  + PrimeNG
+
+    ** `npm i primeng --save` 
+
+  + PrimeNG Icons
+
+    ** `npm i primeicons --save` 
+
 ## Gerar componentes
 
 Execute o comando para gerar um novo componente angular `ng generate component component-name` ou `ng g c component-name` .
@@ -13,7 +31,10 @@ Você também pode usar o seguinte comando `ng generate directive|pipe|service|c
 
 ## JSON-SERVER
 
-Execute o comando `json-server --watch locals.json` . O arquivo `locals.json` contém a estrutura do arquivo que será gerado um json
+#### Instalação do json-server
+
+  + npm install -g json-server
+  + Execute o comando `json-server --watch locals.json` . O arquivo `locals.json` contém a estrutura do arquivo que será gerado um json
 
 ## Plugin REST Client
 
