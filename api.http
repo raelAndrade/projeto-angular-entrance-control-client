@@ -10,7 +10,7 @@ GET http://{{hostname}}:{{port}}/{{name}}
 
 ###
 
-GET http://{{hostname}}:{{port}}/{{name}}/2
+GET http://{{hostname}}:{{port}}/{{name}}/1
 
 ###
 
@@ -36,8 +36,8 @@ content-type: application/json
               "entrances": [
                 "MAIN_ENTRANCE"
               ],
-              "created": "2020-01-15 01:14:34",
-              "updated": "2020-01-15 01:14:34"
+              "created": "{{$localDatetime iso8601}}",
+              "updated": "{{$localDatetime iso8601}}"
             }
           ],
           "created": "{{$localDatetime iso8601}}",
