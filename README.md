@@ -38,18 +38,18 @@ curl - X GET http: //localhost:3000/locals/1 -H 'cache-control: no-cache'
 @POST
 
 curl - X POST http: //localhost:3000/locals -H 'cache-control: no-cache' -H'content-type: application/json' -d '{
-    "initial": "RAVAP",
-    "description": "Regional Administrativa do Vale do Paraíba",
+    "initial": "TESTE",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting",
     "administrations": [{
-        "name": "Guaratinguetá",
-        "cnpj": "123.123.123/0001-47",
+        "name": "Lorem Ipsum",
+        "cnpj": "123.123.123/0001-01",
         "churches": [{
-            "name": "Vila Passos",
+            "name": "Lorem Ipsum is simply dummy text of the printing and typesetting",
             "code": "221605",
-            "description": "Congregação Vila Passos",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting",
             "rooms": [{
-                "name": "Sala Administração Coletas",
-                "description": "Sala Administração de Coletas",
+                "name": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting",
                 "entrances": [
                     "MAIN_ENTRANCE"
                 ],
