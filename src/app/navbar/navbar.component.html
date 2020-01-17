@@ -1,19 +1,51 @@
-<h3 class="first">Default</h3>
-<p-tabMenu [model]="items1" [activeItem]="items1[0]"></p-tabMenu>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">CCB</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" [routerLink]="['/']" routerLinkActive="active">Home <span
+          class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" [routerLink]="['/locals']" routerLinkActive="active">Locais</a>
+      <a class="nav-item nav-link" [routerLink]="['/meeting']" routerLinkActive="active">Reuniões</a>
+    </div>
+  </div>
+</nav>
 
+<!-- <h3 class="first">Default</h3>
+<p-tabMenu [model]="items1" [activeItem]="items1[0]"></p-tabMenu>
 <p-tabMenu [model]="items"></p-tabMenu>
+
+<br /><br />
 
 <h3>Templating</h3>
 <p-tabMenu [model]="items2" [activeItem]="activeItem">
-    <ng-template pTemplate="item" let-item let-i="index">
-        <div style="position: relative; text-align: center; min-width: 10em">
-            <div class="ui-menuitem-icon" [ngClass]="item.icon" *ngIf="item.icon" style="font-size: 2em"></div>
-            <div class="ui-menuitem-text">
-                {{item.label}}
-            </div>
-            <a tabindex="0" class="ui-menuitem-icon" (click)="closeItem($event, i)" style="position: absolute; right: -1em; top: -.5em; padding: 0" *ngIf="i !== 0">
-                <span class="pi pi-times"></span>
-            </a>
-        </div>
-    </ng-template>
+  <ng-template pTemplate="item" let-item let-i="index">
+    <div style="position: relative; text-align: center; min-width: 10em">
+      <div class="ui-menuitem-icon" [ngClass]="item.icon" *ngIf="item.icon" style="font-size: 2em"></div>
+      <div class="ui-menuitem-text">
+        {{item.label}}
+      </div>
+      <a tabindex="0" class="ui-menuitem-icon" (click)="closeItem($event, i)"
+        style="position: absolute; right: -1em; top: -.5em; padding: 0" *ngIf="i !== 0">
+        <span class="pi pi-times"></span>
+      </a>
+    </div>
+  </ng-template>
 </p-tabMenu>
+
+<br /><br />
+<h3>Calendário</h3>
+<p-calendar [(ngModel)]="value"></p-calendar>
+
+<br /><br /> -->
+
+<!-- <h3>DROPDOWN</h3>
+
+<p-dropdown [options]="cities1" [(ngModel)]="selectedCity1"></p-dropdown> -->
+
+<!-- <p-dropdown [options]="cities2" [(ngModel)]="selectedCity2" optionLabel="name"></p-dropdown> -->
+
+<!-- <br /><br /> -->

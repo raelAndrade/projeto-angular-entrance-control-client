@@ -1,43 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">CCB</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" [routerLink]="['/']" routerLinkActive="active">Home <span
-          class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" [routerLink]="['/locals']" routerLinkActive="active">Locais</a>
-      <a class="nav-item nav-link" [routerLink]="['/meeting']" routerLinkActive="active">Reuniões</a>
-    </div>
+<div>
+
+  <app-navbar></app-navbar>
+
+  <div class="container">
+    <router-outlet></router-outlet>
   </div>
-</nav>
 
-
-<div class="container">
-  <div class="ui-g">
+  <!-- <div class="ui-g">
     <div class="ui-g-4">Coluna 1</div>
     <div class="ui-g-4">Coluna 2</div>
     <div class="ui-g-4">Coluna 3</div>
-  </div>
-</div>
+  </div> -->
 
-<div class="container">
-  
-  <p-card>
-    <p-header>
-      Header content here
-    </p-header>
-    Body Content
-    <p-footer>
-      Footer content here
-    </p-footer>
-  </p-card>
-  
-</div>
-
-<div class="container">
-  <router-outlet></router-outlet>
-  <app-navbar></app-navbar>
 </div>
