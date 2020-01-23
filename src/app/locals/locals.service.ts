@@ -7,7 +7,11 @@ import { Locals } from './locals-list/locals';
   providedIn: 'root'
 })
 export class LocalsService {
+
   private readonly API = 'http://localhost:3000/locals';
+
+  private readonly API_ADM = 'http://localhost:3001/administrations';
+
   constructor(private http: HttpClient) { }
 
   list() {
