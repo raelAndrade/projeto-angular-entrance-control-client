@@ -36,7 +36,16 @@ Você também pode usar o seguinte comando `ng generate directive|pipe|service|c
 #### Instalação do json-server
 
   + npm install -g json-server
-  + Execute o comando `json-server --watch locals.json` . O arquivo `locals.json` contém a estrutura do arquivo que será gerado um json
+
+  ##### Locals
+
+  + Execute o comando `json-server --watch locals.json --port 3000` . O arquivo `locals.json` contém a estrutura do arquivo que será gerado um json
+  + URL:  http://localhost:3000/locals
+
+  ##### Administrations
+
+  + Execute o comando `json-server --watch administration.json --port 3001` . O arquivo `administration.json` contém a estrutura do arquivo que será gerado um json
+  + URL: http://localhost:3001/administrations
 
 ## Plugin REST Client
 
