@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
-import { Locals } from './locals-list/locals';
+import { Administrations } from './locals-add/adm-list'
 
 @Injectable({
   providedIn: 'root'
 })
-export class LocalsService {
+export class AdmService {
 
-  private readonly API = 'http://localhost:3000/locals';
+  private readonly API = 'http://localhost:3001/administrations';
 
   constructor(private http: HttpClient) { }
 
   list() {
-    return this.http.get<Locals[]>(this.API)
+    return this.http.get<Administrations[]>(this.API)
       .pipe(tap(console.log));
   }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Administrations } from './adm-list';
+import { AdmService } from '../adm.service';
 
 @Component({
   selector: 'app-locals-add',
@@ -8,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocalsAddComponent implements OnInit {
 
-  constructor() { }
+  adm: Administrations[] = [];
+
+  constructor(private service: AdmService) { }
 
   ngOnInit() {
+    this.service.list().subscribe(dados => this.adm = dados);
   }
 
 }
