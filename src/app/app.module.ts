@@ -5,26 +5,23 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 /* Componentes PrimeNG */
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
-import { DialogModule } from 'primeng/dialog';
-import { CardModule } from 'primeng/card';
-import { MenuModule } from 'primeng/menu';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { CalendarModule } from 'primeng/calendar';
-import { DropdownModule } from 'primeng/dropdown';
-import { PanelModule } from 'primeng/panel';
+import { MessagesModule } from 'primeng/components/messages/messages';
+import { PanelModule } from 'primeng/components/panel/panel';
+import { TableModule } from 'primeng/components/table/table';
+import { InputTextModule } from 'primeng/components/inputtext/inputtext';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CommonModule } from '@angular/common';
+/* import { LocalsAddComponent } from './locals/locals-add/locals-add.component';
+import { LocalsListComponent } from './locals/locals-list/locals-list.component'; */
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    /* LocalsAddComponent,
+    LocalsListComponent, */
   ],
   imports: [
     AppRoutingModule,
@@ -33,19 +30,12 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MessagesModule,
+    PanelModule,
     TableModule,
     InputTextModule,
-    ButtonModule,
-    DialogModule,
-    CardModule,
-    MenuModule,
-    TabMenuModule,
-    CalendarModule,
-    DropdownModule,
-    PanelModule,
   ],
   providers: [],
-  exports: [FormsModule, ReactiveFormsModule, CommonModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

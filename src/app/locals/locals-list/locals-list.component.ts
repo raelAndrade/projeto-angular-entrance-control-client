@@ -10,7 +10,7 @@ import { Locals } from './locals';
 })
 export class LocalsListComponent implements OnInit {
 
-  locals: Locals[];
+  locals: Locals[] = [];
 
   constructor(private service: LocalsService) { }
 

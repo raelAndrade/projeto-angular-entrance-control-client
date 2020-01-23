@@ -1,65 +1,48 @@
 <div class="container">
-  <form (ngSubmit)="submit()" class="p-3 bg-faded">
-    <p-panel>
-      <p-header>
-        <div class="ui-helper-clearfix">
-          <span class="ui-panel-title" style="font-size:16px;display:inline-block;margin-top:2px">Cadastro</span>
+
+  <form>
+    <p-fieldset legend="Cadastro">
+      <div class="ui-g ui-fluid">
+        <div class="ui-g-1">
+          <label for="local">Local</label>
         </div>
-      </p-header>
-      <div class="form-group row">
-        <label for="name" class="col-sm-3 col-form-label"><strong>Nome</strong></label>
-        <div class="col-sm-9">
-          <input id="name" type="text" class="form-control" formControlName="name" />
+        <div class="ui-g-6">
+          <input id="local" type="text" size="30" pInputText [style]="{'width': '100%'}">
         </div>
-      </div>
-      <div class="form-group row">
-        <label for="description" class="col-sm-3 col-form-label"><strong>Descrição</strong></label>
-        <div class="col-sm-9">
-          <input id="description" type="text" class="form-control" formControlName="description" />
+        <div class="ui-g-1">
+          <label for="local">Data</label>
+        </div>
+        <div class="ui-g-4">
+          <p-calendar dateFormat="dd/mm/yyyy"></p-calendar>
         </div>
       </div>
-      <div class="form-group row">
-        <label for="description" class="col-sm-3 col-form-label"><strong>Administração</strong></label>
-        <div class="col-sm-9">
-          <input id="description" type="text" class="form-control" formControlName="description" />
+      <div class="ui-g ui-fluid">
+        <div class="ui-g-1">
+          <label for="descricao">Descrição</label>
+        </div>
+        <div class="ui-g-11">
+          <input id="descricao" type="text" size="30" pInputText [style]="{'width': '100%'}">
         </div>
       </div>
-      <p-footer>
-        <div class="text-right">
-          <button type="button" class="btn btn-outline-primary"><i class="pi pi-times"></i>Salvar</button>
-          <button type="button" class="btn btn-outline-danger"><i class="pi pi-save"></i>Cancelar</button>
-          <!-- <button pButton type="button" class="ui-button-info" label="Cancel"><i class="pi pi-times"></i>Cancelar</button>
-        <button pButton type="submit" class="ui-button-success" label="Save"><i class="pi pi-save"></i>Salvar</button> -->
+    </p-fieldset>
+    <p-fieldset legend="Administração">
+      <div class="ui-g ui-fluid">
+        <div class="ui-g-1">
+          <label for="descricao">ADM</label>
         </div>
-      </p-footer>
-    </p-panel>
+        <div class="ui-g-11">
+          <p-autoComplete field="name" [size]="30" placeholder="Administração" [minLength]="1"></p-autoComplete>
+        </div>
+      </div>
+    </p-fieldset>
+    <div class="ui-g ui-fluid">
+      <div class="ui-g-8"></div>
+      <div class="ui-g-2">
+        <button pButton type="button" label="Salvar" class="ui-button-rounded"></button>
+      </div>
+      <div class="ui-g-2">
+        <button pButton type="button" label="Cancelar" class="ui-button-rounded ui-button-danger"></button>
+      </div>
+    </div>
   </form>
 </div>
-
-
-<!-- <form (ngSubmit)="submit()" class="p-3 bg-faded">
-    <div class="form-group row">
-      <label for="name" class="col-sm-3 col-form-label"><strong>Nome</strong></label>
-      <div class="col-sm-9">
-        <input id="name" type="text" class="form-control" formControlName="name" />
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="description" class="col-sm-3 col-form-label"><strong>Descrição</strong></label>
-      <div class="col-sm-9">
-        <input id="description" type="text" class="form-control" formControlName="description" />
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="description" class="col-sm-3 col-form-label"><strong>Administração</strong></label>
-      <div class="col-sm-9">
-        <input id="description" type="text" class="form-control" formControlName="description" />
-      </div>
-    </div>
-    <div class="text-right">
-      <button type="button" class="btn btn-outline-primary"><i class="pi pi-times"></i>Salvar</button>
-      <button type="button" class="btn btn-outline-danger"><i class="pi pi-save"></i>Cancelar</button> -->
-<!-- <button pButton type="button" class="ui-button-info" label="Cancel"><i class="pi pi-times"></i>Cancelar</button>
-      <button pButton type="submit" class="ui-button-success" label="Save"><i class="pi pi-save"></i>Salvar</button> -->
-<!-- </div>
-  </form> -->
