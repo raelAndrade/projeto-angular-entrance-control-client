@@ -31,7 +31,9 @@
           <label for="descricao">ADM</label>
         </div>
         <div class="ui-g-11">
-          <p-autoComplete field="name" [size]="30" placeholder="Administração" [minLength]="1"></p-autoComplete>
+          <p-autoComplete field="name" [size]="30" placeholder="Administração" [minLength]="1"
+            [suggestions]="filteredAdminSingle" (completeMethod)="filterAdminSingle($event)">
+          </p-autoComplete>
         </div>
       </div>
     </p-fieldset>
