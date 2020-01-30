@@ -53,7 +53,7 @@ export class NavbarComponent implements OnInit {
     ];
 
 
-    //SelectItem API with label-value pairs
+    // SelectItem API with label-value pairs
     this.cities1 = [
       { label: 'Select City', value: null },
       { label: 'New York', value: { id: 1, name: 'New York', code: 'NY' } },

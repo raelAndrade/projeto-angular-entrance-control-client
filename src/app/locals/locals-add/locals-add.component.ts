@@ -15,14 +15,14 @@ export class LocalsAddComponent implements OnInit {
 
   constructor(private service: AdmService) { }
 
-  filterAdminSingle(event) {
+  /* filterAdminSingle(event) {
     let query = event.query;
     this.service.list().then(admin => {
       this.filteredAdminSingle = this.filterAdmin(query, admin);
     });
-  }
+  } */
 
-  filterAdmin(query, admin: any[]): any[] {
+  /* filterAdmin(query, admin: any[]): any[] {
     let filtered: any[] = [];
     for (let i = 0; i < admin.length; i++) {
       let adm = admin[i];
@@ -31,10 +31,10 @@ export class LocalsAddComponent implements OnInit {
       }
     }
     return filtered;
-  }
+  } */
 
   ngOnInit() {
-    this.service.list().subscribe(dados => this.adm = dados);
+    //this.service.list().subscribe(dados => this.adm = dados);
   }
 
 }

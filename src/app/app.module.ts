@@ -9,10 +9,14 @@ import { MessagesModule } from 'primeng/components/messages/messages';
 import { PanelModule } from 'primeng/components/panel/panel';
 import { TableModule } from 'primeng/components/table/table';
 import { InputTextModule } from 'primeng/components/inputtext/inputtext';
+import { MegaMenuModule } from 'primeng/components/megamenu/megamenu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
 /* import { LocalsAddComponent } from './locals/locals-add/locals-add.component';
 import { LocalsListComponent } from './locals/locals-list/locals-list.component'; */
 
@@ -20,6 +24,9 @@ import { LocalsListComponent } from './locals/locals-list/locals-list.component'
   declarations: [
     AppComponent,
     NavbarComponent,
+    HeaderComponent,
+    FooterComponent,
+    MenuComponent,
     /* LocalsAddComponent,
     LocalsListComponent, */
   ],
@@ -34,6 +41,7 @@ import { LocalsListComponent } from './locals/locals-list/locals-list.component'
     PanelModule,
     TableModule,
     InputTextModule,
+    MegaMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
