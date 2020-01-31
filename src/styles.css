@@ -1,2 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Header, Navbar e Aside Lateral */
+.sidebar {
+    overflow: hidden !important;
+}
+[class*=sidebar-dark-] {
+    background-color: #1d84f9 !important;
+}
+.navbar-white {
+    background-color: #1d84f9 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+}

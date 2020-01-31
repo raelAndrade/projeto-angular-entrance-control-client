@@ -11,14 +11,14 @@ import { TableModule } from 'primeng/components/table/table';
 import { InputTextModule } from 'primeng/components/inputtext/inputtext';
 import { MegaMenuModule } from 'primeng/components/megamenu/megamenu';
 
+import { LocalsModule } from '../app/locals/locals.module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
-/* import { LocalsAddComponent } from './locals/locals-add/locals-add.component';
-import { LocalsListComponent } from './locals/locals-list/locals-list.component'; */
 
 @NgModule({
   declarations: [
@@ -26,9 +26,7 @@ import { LocalsListComponent } from './locals/locals-list/locals-list.component'
     NavbarComponent,
     HeaderComponent,
     FooterComponent,
-    MenuComponent,
-    /* LocalsAddComponent,
-    LocalsListComponent, */
+    MenuComponent
   ],
   imports: [
     AppRoutingModule,
@@ -42,6 +40,7 @@ import { LocalsListComponent } from './locals/locals-list/locals-list.component'
     TableModule,
     InputTextModule,
     MegaMenuModule,
+    LocalsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

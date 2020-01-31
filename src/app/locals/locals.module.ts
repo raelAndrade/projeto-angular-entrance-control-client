@@ -1,10 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { LocalsRoutingModule } from './locals-routing.module';
-
-import { LocalsListComponent } from './locals-list/locals-list.component';
-import { LocalsAddComponent } from './locals-add/locals-add.component';
 
 import { MessagesModule } from 'primeng/components/messages/messages';
 import { PanelModule } from 'primeng/components/panel/panel';
@@ -14,6 +10,9 @@ import { InputTextModule } from 'primeng/components/inputtext/inputtext';
 import { AutoCompleteModule } from 'primeng/components/autocomplete/autocomplete';
 import { ButtonModule } from 'primeng/components/button/button';
 import { CalendarModule } from 'primeng/components/calendar/calendar';
+
+import { LocalsListComponent } from './locals-list/locals-list.component';
+import { LocalsAddComponent } from './locals-add/locals-add.component';
 
 @NgModule({
   declarations: [LocalsListComponent, LocalsAddComponent],

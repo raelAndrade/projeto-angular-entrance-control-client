@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
 
-  { path: '', pathMatch: 'full', redirectTo: 'locals' },
+  { path: '', pathMatch: 'full', redirectTo: '/' },
   { path: 'locals', loadChildren: './locals/locals.module#LocalsModule' },
 
 ];
