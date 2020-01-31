@@ -10,6 +10,7 @@ import { PanelModule } from 'primeng/components/panel/panel';
 import { TableModule } from 'primeng/components/table/table';
 import { InputTextModule } from 'primeng/components/inputtext/inputtext';
 import { MegaMenuModule } from 'primeng/components/megamenu/megamenu';
+import { MenubarModule } from 'primeng/components/menubar/menubar';
 
 import { LocalsModule } from '../app/locals/locals.module';
 
@@ -40,7 +41,8 @@ import { MenuComponent } from './menu/menu.component';
     TableModule,
     InputTextModule,
     MegaMenuModule,
-    LocalsModule
+    LocalsModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
